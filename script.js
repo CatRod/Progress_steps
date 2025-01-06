@@ -12,5 +12,15 @@ next.addEventListener("click", () => {
     currentActive = circles.length;
   }
 
-  console.log(currentActive);
+  update();
+});
+
+prev.addEventListener("click", () => {
+  currentActive--;
+
+  if (currentActive < 1) {
+    currentActive = 1;
+  }
+
+  update();
 });
